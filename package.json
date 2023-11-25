@@ -1,8 +1,8 @@
 {
-  "name": "your-project-name",
+  "name": "itmo_data_management_course",
   "version": "1.0.0",
   "scripts": {
-    "generate-images": "npx mmdc -i Context.mmd -o hello.png"
+    "generate-images": "npx mmdc -i scr/Context.mmd -o doc/hello.png"
   },
   "dependencies": {
     "mermaid.cli": "*"
