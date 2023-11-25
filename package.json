@@ -1,10 +1,11 @@
 {
+  "name": "your-project-name",
+  "version": "1.0.0",
   "scripts": {
     "generate-images": "npx mmdc -i Context.md -o hello.png"
-  }
-}
-{
+  },
   "dependencies": {
     "mermaid.cli": "^8.14.0"
   }
 }
+
