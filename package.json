@@ -2,7 +2,7 @@
   "name": "generate-images",
   "version": "1.0.0",
   "scripts": {
-    "generate-images": "npx mmdc -i Context.md -o hello.svg"
+    "generate-images": "npx mmdc -i Context.md -o docs/Context.svg"
   },
   "dependencies": {
     "@mermaid-js/mermaid-cli": "^10.2.4"
