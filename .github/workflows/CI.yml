@@ -1,9 +1,5 @@
-name: Generate SVG images
-
-on:
-  push:
-    branches:
-      - main
+name: CI
+on: [pull_request]
 
 jobs:
   build:
