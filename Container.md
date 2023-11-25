@@ -23,7 +23,7 @@ UpdateRelStyle(Company, MobileApp, $offsetY="20", $offsetX="0")
 BiRel(WebApp, MainApp, "Делает API запросы (JSON)")
 BiRel(MobileApp, MainApp, "Делает API запросы (SQL)")
 BiRel(MainApp, DB_Onside, "Читает и пишет в БД (SQL)")
-BiRel(MainApp, CompanyDatabase, "Читает и пишет в БД (SQL)")
+Rel(MainApp, CompanyDatabase, "Читает и пишет в БД (SQL)")
 
 UpdateLayoutConfig($c4ShapeInRow="4", $c4BoundaryInRow="1")
 ```
