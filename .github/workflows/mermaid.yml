@@ -18,11 +18,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate Mermaid images
-        run: npm run generate-images
+      - name: Generate files
+        run: node generate-files.js
 
-      - name: Upload image artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: Generated Images
-          path: ./docs/Context.svg
