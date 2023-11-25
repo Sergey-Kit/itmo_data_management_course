@@ -5,7 +5,7 @@
     "generate-images": "npx mmdc -i Context.md -o hello.svg"
   },
   "dependencies": {
-    "mermaid.cli": "*"
+    "@mermaid-js/mermaid-cli": "^10.2.4"
   }
 }
 
