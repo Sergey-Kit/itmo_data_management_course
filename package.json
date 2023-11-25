@@ -2,7 +2,7 @@
   "name": "itmo_data_management_course",
   "version": "1.0.0",
   "scripts": {
-    "generate-images": "npx mmdc -i Context.md -o hello.png"
+    "generate-images": "npx mmdc -i Context.md -o hello.svg"
   },
   "dependencies": {
     "mermaid.cli": "*"
