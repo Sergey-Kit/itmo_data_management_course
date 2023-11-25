@@ -20,3 +20,9 @@ jobs:
 
       - name: Generate Mermaid images
         run: npm run generate-images
+
+      - name: Upload image artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Generated Images
+          path: ./docs/Context.svg
