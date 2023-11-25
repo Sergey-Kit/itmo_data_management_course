@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "generate-images": "npx mmdc -i Context.md -o hello.png"
+  }
+}
