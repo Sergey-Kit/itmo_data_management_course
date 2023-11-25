@@ -4,6 +4,7 @@
   "scripts": {
     "generate-images": "npx mmdc -i Context.md -o docs/Context.svg"
   },
+  "type": "module",
   "dependencies": {
     "@mermaid-js/mermaid-cli": "^10.2.4"
   }
