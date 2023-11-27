@@ -30,6 +30,7 @@ jobs:
       - name: Add changes
         run: git add .
 
+
       - name: Commit changes
         run: git commit -m "New commit"
 
