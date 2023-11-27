@@ -1,6 +1,6 @@
 name: Generate Mermaid Images
 
-on: [pull_request]
+on: [push]
 
 jobs:
   build:
@@ -21,3 +21,14 @@ jobs:
       - name: Generate files
         run: node generate-files.js
 
+      - name: Add changes
+        run: git add .
+
+      - name: Commit changes
+        run: git commit -m "New commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+ 
