@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit
         run: |
-          git commit -am  "New commit"
-          git add *
+          git commit -m  "New commit"
+          git add .
           
       - name: Push
         run: git push
