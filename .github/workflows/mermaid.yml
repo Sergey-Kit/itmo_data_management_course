@@ -1,0 +1,38 @@
+name: Generate Mermaid Images
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate files
+        run: node generate-files.js
+
+      - name: Debug
+        run: ls -l
+
+      - name: Set Git identity
+        run: |
+          git config --global user.email ${{ secrets.GIT_USER_EMAIL }}
+          git config --global user.name ${{ secrets.GIT_USER_NAME }}
+
+      - name: Commit
+        run: |
+          git add .
+          git commit -m "New commit"
+          
+      - name: Push
+        run: git push
